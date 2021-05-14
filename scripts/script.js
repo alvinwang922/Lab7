@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector('header h1').addEventListener('click', () => {
   if (history.state != null && history.state.name != 'home') {
-    setState({name: 'home'});
+    setState({name: 'home'}, false);
   };
 });
 
 document.querySelector('header img').addEventListener('click', () => {
-  setState({name: 'settings'});
+  setState({name: 'settings'}, false);
 });
 
 window.addEventListener('popstate', (event) => {

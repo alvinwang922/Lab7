@@ -39,7 +39,7 @@ router.setState = function(state, back) {
    *    2. You may modify the parameters of setState() as much as you like
    */
 
-   if (state == null || state.name == 'home') {
+  if (state == null || state.name == 'home') {
     body.className = ''; 
     header.innerHTML = 'Journal Entries';
     if (!back) {
